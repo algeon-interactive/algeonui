@@ -1,0 +1,62 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"4kBzOu-div\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Toplant\u0131 Notlar\u0131</span>\",\"col\":12}},{\"id\":\"CF9Kdq-cG_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Existing Meeting Notes\",\"col\":3}},{\"id\":\"J2h_QqcW7o\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Create a Meeting Note\",\"col\":3}},{\"id\":\"2Rq2CADxtL\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"aPkK4dMu2J\",\"type\":\"custom_block\",\"data\":{\"custom_block_name\":\"Meeting Note of The Day\",\"col\":6}},{\"id\":\"WO8UTJ1PfN\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"FePMWtjb1c\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"XaMpc8Sy4R\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"BwW4V8jATM\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"hnErF7M0Ou\",\"type\":\"spacer\",\"data\":{\"col\":6}}]",
+ "creation": "2025-05-27 23:03:20.777725",
+ "custom_blocks": [
+  {
+   "custom_block_name": "Meeting Note of The Day",
+   "label": "Meeting Note of The Day"
+  }
+ ],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "list-alt",
+ "idx": 0,
+ "indicator_color": "",
+ "is_hidden": 0,
+ "label": "Meeting Notes",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Meeting Notes",
+   "link_count": 0,
+   "link_to": "Meeting Note",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2025-05-29 12:38:31.987974",
+ "modified_by": "Administrator",
+ "module": "Toplant\u0131 Notlar\u0131",
+ "name": "Meeting Notes",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 39.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Existing Meeting Notes",
+   "link_to": "Meeting Note",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "New",
+   "label": "Create a Meeting Note",
+   "link_to": "Meeting Note",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Meeting Notes"
+}

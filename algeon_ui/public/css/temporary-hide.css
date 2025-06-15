@@ -1,0 +1,4 @@
+div[item-is-hidden="1"] {
+  height: 0;
+  visibility: hidden;
+}

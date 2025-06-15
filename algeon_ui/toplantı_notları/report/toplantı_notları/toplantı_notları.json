@@ -1,0 +1,29 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-05-27 23:34:01.070336",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-05-27 23:40:29.996615",
+ "modified_by": "Administrator",
+ "module": "Toplant\u0131 Notlar\u0131",
+ "name": "Toplant\u0131 Notlar\u0131",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\r\n  name,\r\n  meeting_title,\r\n  meeting_date,\r\n  agenda\r\nFROM\r\n  `tabMeeting Note`\r\nWHERE\r\n  DATE(meeting_date) = CURDATE()\r\nORDER BY\r\n  creation DESC\r\n",
+ "ref_doctype": "Meeting Note",
+ "report_name": "Toplant\u0131 Notlar\u0131",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

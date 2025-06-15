@@ -1,0 +1,69 @@
+.app-logo {
+    background-image: url('/assets/algeon_ui/images/gec-logo.png') !important;
+    background-size: contain !important; 
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    height: 70px !important;
+    max-height: 70px !important;
+    color: transparent !important;
+    display: inline-block;
+    overflow: hidden;
+    font-size: 0;
+    padding-left: 100%;
+}
+
+a.link-item .link-content{
+    display: flex !important;
+    padding: 8px 10px !important;
+    background-color: slategray !important;
+    color: white !important;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius: var(--border-radius) !important;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    .es-icon {
+        margin-right: 0 !important;
+        stroke: white !important;
+    }
+}
+
+a.link-item .link-content:hover {
+    background-color: slateblue !important;
+}
+
+.shortcut-widget-box{
+    display: flex !important;
+    padding: 8px 10px !important;
+    background-color: slategray !important;
+    color: white !important;
+    text-decoration: none !important;
+    border: none !important;
+    border-radius: var(--border-radius) !important;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    .es-icon {
+        margin-right: 0 !important;
+        stroke: white !important;
+    }
+}
+
+.shortcut-widget-box:hover {
+    background-color: slateblue !important;
+}
+
+.shortcut-widget-box .widget-head .widget-label .widget-title {
+    color: white !important;
+}
+
+.shortcut-widget-box:hover .widget-head .widget-label .widget-title {
+    color: white !important;
+}

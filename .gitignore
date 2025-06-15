@@ -1,0 +1,22 @@
+# Python
+*.py[cod]
+__pycache__/
+*.so
+*.egg-info/
+dist/
+build/
+*.log
+*.pot
+
+# Frappe specific (if any, usually handled by bench itself)
+# .env
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS specific
+.DS_Store
+Thumbs.db
