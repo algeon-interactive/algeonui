@@ -67,3 +67,21 @@ a.link-item .link-content:hover {
 .shortcut-widget-box:hover .widget-head .widget-label .widget-title {
     color: white !important;
 }
+
+.list-row {
+    height: 80px;
+}
+
+.list-row .avatar-small {
+    width: 75px;
+    height: 75px;
+}
+
+.list-row .avatar-small img {
+    width: 75px;
+    height: 75px;
+}
+
+.followed-by-section, .form-sidebar-stats, .form-shared, .form-tags, .form-assignments, .comment-count, .list-row-like {
+    display: none !important;
+}

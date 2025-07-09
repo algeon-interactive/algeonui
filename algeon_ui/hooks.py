@@ -1,3 +1,5 @@
+"""Module for Algeon UI hooks."""
+
 app_name = "algeon_ui"
 app_title = "Algeon ERP"
 app_publisher = "Algeon Interactive"
@@ -29,22 +31,26 @@ app_include_css = [
     "/assets/algeon_ui/css/algeon-ui.css",
     "/assets/algeon_ui/css/temporary-hide.css"
 ]
+
 app_include_js = "/assets/algeon_ui/js/meeting_notes_dashboard.js"
 
-def algeon_ui_update_website_context(context):
-    # Set the path to your custom favicon
-    context.favicon = "/assets/algeon_ui/images/favicon.png"
+print("--- DEBUG TRACE [algeon_ui]: hooks.py IS BEING LOADED ---")
 
-    # Optionally, you can also set other apple-touch-icon or similar manifest icons here
-    # if the base template supports variables for them (inspect base.html to confirm)
-    # context.touch_icon = "/assets/algeon_ui/images/apple-touch-icon.png" # Example
+print("--- DEBUG TRACE [algeon_ui]: About to assign website_context ---") # New print
 
-website_context = {"*": algeon_ui_update_website_context}
+website_context = {
+    "favicon": "/assets/algeon_ui/images/gec-favicon.png",
+	"splash_image": "/assets/algeon_ui/images/gec-logo.png",
+}
+
+print("--- DEBUG TRACE [algeon_ui]: Finished assigning website_context. Hook should be registered. ---") # New print
 
 whitelisted_methods = [
-    "algeon_ui.custom_dashboard_queries.get_distinct_item_count_per_warehouse",
-    "algeon_ui.custom_dashboard_queries.get_total_stock_quantity_per_warehouse"
+    "algeon_ui.algeon_ui.algeon_ui.dashboard_chart_source.product_stock_by_warehouse.product_stock_by_warehouse.get_data",
+    "algeon_ui.algeon_ui.dashboard_chart_source.product_stock_by_warehouse.product_stock_by_warehouse.get_data"
 ]
+
+print(f"--- DEBUG TRACE [algeon_ui]: FINAL whitelisted_methods: {locals().get('whitelisted_methods')}")
 
 # include js, css files in header of web template
 # web_include_css = "/assets/algeon_ui/css/algeon_ui.css"

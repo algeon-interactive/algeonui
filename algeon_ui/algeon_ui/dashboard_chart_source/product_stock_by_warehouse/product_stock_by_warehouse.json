@@ -1,0 +1,13 @@
+{
+ "creation": "2025-06-23 23:13:53.454524",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart Source",
+ "idx": 0,
+ "modified": "2025-06-23 23:13:53.454524",
+ "modified_by": "Administrator",
+ "module": "Algeon UI",
+ "name": "Product Stock by Warehouse",
+ "owner": "Administrator",
+ "source_name": "Product Stock by Warehouse",
+ "timeseries": 0
+}
