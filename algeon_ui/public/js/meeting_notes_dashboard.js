@@ -1,3 +1,4 @@
+frappe.pages['meeting-notes-dashboard'] = frappe.pages['meeting-notes-dashboard'] || {};
 frappe.pages['meeting-notes-dashboard'].on_page_load = function(wrapper) {
     let page = frappe.ui.make_app_page({
         parent: wrapper,

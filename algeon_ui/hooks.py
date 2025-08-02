@@ -28,29 +28,23 @@ add_to_apps_screen = [
 # include js, css files in header of desk.html
 
 app_include_css = [
-    "/assets/algeon_ui/css/algeon-ui.css",
-    "/assets/algeon_ui/css/temporary-hide.css"
+	"/assets/algeon_ui/css/algeon-ui.css",
+	"/assets/algeon_ui/css/temporary-hide.css",
 ]
 
-app_include_js = "/assets/algeon_ui/js/meeting_notes_dashboard.js"
-
-print("--- DEBUG TRACE [algeon_ui]: hooks.py IS BEING LOADED ---")
-
-print("--- DEBUG TRACE [algeon_ui]: About to assign website_context ---") # New print
+app_include_js = [
+	"/assets/algeon_ui/js/meeting_notes_dashboard.js?v=1.1",
+	"/assets/algeon_ui/js/custom_tab_nav.js",
+]
 
 website_context = {
-    "favicon": "/assets/algeon_ui/images/gec-favicon.png",
+	"favicon": "/assets/algeon_ui/images/gec-favicon.png",
 	"splash_image": "/assets/algeon_ui/images/gec-logo.png",
 }
 
-print("--- DEBUG TRACE [algeon_ui]: Finished assigning website_context. Hook should be registered. ---") # New print
-
 whitelisted_methods = [
-    "algeon_ui.algeon_ui.algeon_ui.dashboard_chart_source.product_stock_by_warehouse.product_stock_by_warehouse.get_data",
-    "algeon_ui.algeon_ui.dashboard_chart_source.product_stock_by_warehouse.product_stock_by_warehouse.get_data"
+	"algeon_ui.algeon_ui.algeon_ui.dashboard_chart_source.product_stock_by_warehouse.product_stock_by_warehouse.get_data",
 ]
-
-print(f"--- DEBUG TRACE [algeon_ui]: FINAL whitelisted_methods: {locals().get('whitelisted_methods')}")
 
 # include js, css files in header of web template
 # web_include_css = "/assets/algeon_ui/css/algeon_ui.css"
@@ -75,7 +69,10 @@ print(f"--- DEBUG TRACE [algeon_ui]: FINAL whitelisted_methods: {locals().get('w
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "algeon_ui/public/icons.svg"
+
+# Alternative method to include icons
+# No duplicate app_include_js or app_include_css here - they override the previous ones
+# icons already included above
 
 # Home Pages
 # ----------
@@ -265,4 +262,3 @@ print(f"--- DEBUG TRACE [algeon_ui]: FINAL whitelisted_methods: {locals().get('w
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
